@@ -1,0 +1,41 @@
+{
+"Type": "UnencryptedConfiguration",
+"NetworkConfigurations": [
+        {
+        "GUID": "{<UUID>}",
+        "Name": "MyOpenVPN",
+        "Type": "VPN",
+        "VPN": {
+                "Type": "OpenVPN",
+                "Host": "<OpenVPN-Server-Name>",
+                "OpenVPN":
+                        {
+                        "Auth": "SHA1",
+                        "ClientCertType": "Ref",
+                        "CompLZO": "true",
+                        "Cipher": "BF-CBC",
+                        "NsCertType": "server",
+                        "Port": 1194,
+                        "Proto": "tcp",
+                        "SaveCredentials": true,
+                        "ServerCARef": "{cacert}",
+                        "ClientCertRef": "{clientcert}",
+                        "Verb": "3",
+                        "ServerPollTimeout": 360
+                        }
+                }
+        }
+        ],
+"Certificates": [
+{
+"GUID": "{cacert}",
+"Type": "Authority",
+"X509": "-----BEGIN CERTIFICATE-----Copy your ca.crt here-----END CERTIFICATE-----"
+},
+{
+"GUID": "{clientcert}",
+"Type": "Client",
+"PKCS12": "Copy you client.crt file here, but only the sections between BEGIN CERTIFICATE and END CERTIFICATE. Skip the actual comment of BEGIN CERTIFICATE and END CERTIFICATE. Also skip the ---- that are before after BEGIN/END"
+}
+]
+}
