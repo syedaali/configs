@@ -1,0 +1,24 @@
+;Comments start with semi-colon in this zone file, which is a forward lookup zone file
+;$TTL is time to live for all records, which do not explicity over-ride this.
+;By default I am selecting 1 day, which means all records will "live" for 1 day after which they will expire
+;The SOA is 'start of authority record' in this case for example.com domain
+;sre.example.com is a contact email address, which would translate to format sre@example.com
+
+$TTL 1d
+@ IN SOA example.com. sre.example.com. (
+	2014030101	;serial
+	1h		;slave refresh from master
+	15m		;how long will slave try
+	5d		;expire slave data after
+	5m)		;negative cache
+
+	IN NS ns01.example.com.
+	IN NS ns02.example.com.
+
+; we have to specify the ORIGIN, i.e., for which network is the reverse, in this case it's for 10.1.1.0/24
+$ORIGIN 1.1.10.in-addr.arpa.
+
+;The actual hosts in the network
+10	IN	PTR	ns01.example.com.
+11	IN 	PTR	ns02.example.com.
+12	IN	PTR	www.example.com.

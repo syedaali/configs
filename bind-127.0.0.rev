@@ -1,0 +1,13 @@
+$ORIGIN 0.0.127.in-addr.arpa.
+$TTL 1d
+@ IN SOA example.com. sre.example.com. (
+	2014030101	;serial
+	1h		;slave refresh from master
+	15m		;how long will slave try
+	5d		;expire slave data after
+	5m)		;negative cache
+
+	IN NS ns01.example.com.
+	IN NS ns02.example.com.
+    
+1	IN	PTR	localhost.

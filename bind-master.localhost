@@ -1,0 +1,15 @@
+$TTL 1d ; how long will a resolver store our data
+
+$ORIGIN localhost.
+
+@   1D  IN SOA @ root (
+        1   ; serial, increment after each change
+        1h  ; slave will refresh from master after this much amount of time
+        15m ; if slave is unable to refresh from master, amount of time it will wait before trying again
+        2d  ; expire slave data after this many days
+        5m  ; negative cache for errors
+)
+
+@   1D  IN  NS @
+    1D  IN  A   127.0.0.1
+    
