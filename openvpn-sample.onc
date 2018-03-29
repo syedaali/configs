@@ -3,7 +3,7 @@
 "NetworkConfigurations": [
         {
         "GUID": "{<UUID>}",
-        "Name": "MyOpenVPN",
+        "Name": "74.105.25.221",
         "Type": "VPN",
         "VPN": {
                 "Type": "OpenVPN",
@@ -30,7 +30,21 @@
 {
 "GUID": "{cacert}",
 "Type": "Authority",
-"X509": "-----BEGIN CERTIFICATE-----Copy your ca.crt here-----END CERTIFICATE-----"
+"X509": "-----BEGIN CERTIFICATE-----
+MIICjDCCAfWgAwIBAgIJAPSaqoH6lsWcMA0GCSqGSIb3DQEBBQUAMF8xGjAYBgNV
+BAMMEWI0Ojc1OjBlOjA2OmE1OmE1MQ8wDQYDVQQLDAZMUlQyMTQxIzAhBgNVBAoM
+GkJlbGtpbiBJbnRlcm5hdGlvbmFsLCBJbmMuMQswCQYDVQQGEwJVUzAeFw0xODAz
+MjYxNTUxNDNaFw0yODAzMjMxNTUxNDNaMF8xGjAYBgNVBAMMEWI0Ojc1OjBlOjA2
+OmE1OmE1MQ8wDQYDVQQLDAZMUlQyMTQxIzAhBgNVBAoMGkJlbGtpbiBJbnRlcm5h
+dGlvbmFsLCBJbmMuMQswCQYDVQQGEwJVUzCBnzANBgkqhkiG9w0BAQEFAAOBjQAw
+gYkCgYEA5Mkql0Q3IEFtcrbe46LRaInE4pV4dwT+ad41mcerLNlwrPtru3bosymU
+lJkA7Wqr3KoKh2mEjCmiNDs0Etjdr7m2UORu4Xlrc9CCruvv9ZqO3smEOOQAQqcb
+4192JDcYWUZOtXMpvYPBCmn33mmYGtT2rrLjO3TTmG8LG9CmJL8CAwEAAaNQME4w
+HQYDVR0OBBYEFHk+fv8JF0aIymCHeUD/i6f9rd7EMB8GA1UdIwQYMBaAFHk+fv8J
+F0aIymCHeUD/i6f9rd7EMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEA
+z52WbD/inb7BHfV5quUKyCklUudu/T5G1LlSKAA7n92G9vt7LAJpRnyUWKIcLc8l
+eLFDdiDoYEof1GfPWtCOBjcK+ctX4bKxPfgqXJhgTly07QHXME1YZwUGqunl++Vu
+ONozYM1ZpxB5/7DEeXvhg+i9/YUe1M03FDqB5oqGUBE=-----END CERTIFICATE-----"
 },
 {
 "GUID": "{clientcert}",
